@@ -10,7 +10,7 @@
 - [x] Preface
 
 - [ ] 1. HTML, XHTML, and the World Wide Web
-  - [ ] 1.1 The Internet
+  - [x] 1.1 The Internet
   - [ ] 1.2 Talking the Internet Talk
   - [ ] 1.3 HTML and XHTML: What They Are
   - [ ] 1.4 HTML and XHTML: What They Aren’t
@@ -191,3 +191,15 @@ For nontraditional content like musical notation or mathematical expressions.
 Common Gateway Interface (CGI): An interface specification that enables web servers to execute an external program to process HTTP user requests. The external programs are called CGI scripts. URLs denote CGI scripts.  
 CD-ROM: a read-only optical media format that uses CDs to store data.  
 Maverick: A young cow or bull that has not been branded and is unclaimed or wild.  
+
+meteoric: Flashing; transient and brilliant; like a meteor.
+intranet: A private network using the same software and protocols as the Internet.
+extranet: Network that uses the Internet to provide services but restricts access to members.
+
+The main benefits of HTML over existing Internet technologies were that it unified pictures, sounds and text into one documentand enabled hypertext linking, where documents reference other documents.  
+Hypertext: Text displayed on a computer display with references to other text that the reader can immediately access.
+
+> less rummaging, more productive time online.
+
+netiquette: Internet etiquette, prohibiting such things as spam email, commonly upheld in the Internet's old times.
+
