@@ -11,7 +11,7 @@
 
 - [ ] 1. HTML, XHTML, and the World Wide Web
   - [x] 1.1 The Internet
-  - [ ] 1.2 Talking the Internet Talk
+  - [x] 1.2 Talking the Internet Talk
   - [ ] 1.3 HTML and XHTML: What They Are
   - [ ] 1.4 HTML and XHTML: What They Aren’t
   - [ ] 1.5 Standards and Extensions
@@ -203,3 +203,11 @@ Hypertext: Text displayed on a computer display with references to other text th
 
 netiquette: Internet etiquette, prohibiting such things as spam email, commonly upheld in the Internet's old times.
 
+Domain name registration used to be handled by a nonprofit organization called InterNIC, but now all organizations and individuals must go through a for-profit company to register a domain name, except US government-related domains.
+
+Internet newsgroup: Refers to a Usenet newsgroup, a repository in the Usenet system for messages posted from users in different locations using the Internet. They are discussion groups, not news publishers.
+
+The comp.infosystems.www newsgroup hierarchy is devoted to the Web, includeng .authoring.html and .authoring.images.
+
+World Wide Web Consortium (W3C): Defines standards for Web-related technology including HTTP, CSS, and XML.
+Internet Engineering Task Force (IEFT): Defines all of the technology of the Internet via official documents known as Request for Comments (RFCS).
