@@ -9,13 +9,13 @@
 
 - [x] Preface
 
-- [ ] 1. HTML, XHTML, and the World Wide Web
+- [x] 1. HTML, XHTML, and the World Wide Web
   - [x] 1.1 The Internet
   - [x] 1.2 Talking the Internet Talk
-  - [ ] 1.3 HTML and XHTML: What They Are
-  - [ ] 1.4 HTML and XHTML: What They Aren’t
-  - [ ] 1.5 Standards and Extensions
-  - [ ] 1.6 Tools for the Web Designer
+  - [x] 1.3 HTML and XHTML: What They Are
+  - [x] 1.4 HTML and XHTML: What They Aren’t
+  - [x] 1.5 Standards and Extensions
+  - [x] 1.6 Tools for the Web Designer
 
 - [ ] 2. Quick Start
   - [ ] 2.1 Writing Tools
@@ -211,3 +211,21 @@ The comp.infosystems.www newsgroup hierarchy is devoted to the Web, includeng .a
 
 World Wide Web Consortium (W3C): Defines standards for Web-related technology including HTTP, CSS, and XML.
 Internet Engineering Task Force (IEFT): Defines all of the technology of the Internet via official documents known as Request for Comments (RFCS).
+
+> HTML is the black sheep in the family of document markup languages.
+
+HTML was based on Standard Generalized Markup Language (SGML), a markup metalanguage originally intended to be the one tool that all document elements were created with. Like SGML, XML is a formal markup metalanguage that uses select features of SGML to define HTML-like markup languages. XML is a simplified subset of SGML.
+
+HTML is *not* a document formatting tool!
+
+reconstitute: To rebuild, or change the organization of.
+eschew: To shun; to avoid as something wrong.
+decry: To blame clamorously; to censure as faulty, mean or worthless.
+
+XML modules allow you to add new features to XHTML documents in a standardized way. For example, the MathML module provides markup elements for math equations. XHTML is itself composed of XML modules.
+
+Word processor: A computer program for inputting, editing, formatting, and displaying text.
+Desktop publishing: The creation of documents such as newsletters, brochures, books and web pages using dedicated software on a personal computer.
+
+Freeware: Software (usually proprietary) distributed at no monetary cost to the user. This doesn't describe the type of license the software uses.
+Shareware: Proprietary software that is initially shared by the owner for trial use at no cost, often with incomplete functionality until the user pays.
