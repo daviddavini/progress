@@ -1,28 +1,28 @@
 HTML Living Standard — Last Updated 23 January 2025
-    1 Introduction
-        1.1 Where does this specification fit?
-        1.2 Is this HTML5?
-        1.3 Background
-        1.4 Audience
-        1.5 Scope
-        1.6 History
-        1.7 Design notes
-            1.7.1 Serializability of script execution
-            1.7.2 Compliance with other specifications
-            1.7.3 Extensibility
-        1.8 HTML vs XML syntax
-        1.9 Structure of this specification
-            1.9.1 How to read this specification
-            1.9.2 Typographic conventions
-        1.10 A quick introduction to HTML
-            1.10.1 Writing secure applications with HTML
-            1.10.2 Common pitfalls to avoid when using the scripting APIs
-            1.10.3 How to catch mistakes when writing HTML: validators and conformance checkers
-        1.11 Conformance requirements for authors
-            1.11.1 Presentational markup
-            1.11.2 Syntax errors
-            1.11.3 Restrictions on content models and on attribute values
-        1.12 Suggested reading
+x   1 Introduction
+x       1.1 Where does this specification fit?
+x       1.2 Is this HTML5?
+x       1.3 Background
+x       1.4 Audience
+x       1.5 Scope
+x       1.6 History
+x       1.7 Design notes
+x           1.7.1 Serializability of script execution
+x           1.7.2 Compliance with other specifications
+x           1.7.3 Extensibility
+x       1.8 HTML vs XML syntax
+x       1.9 Structure of this specification
+x           1.9.1 How to read this specification
+x           1.9.2 Typographic conventions
+x       1.10 A quick introduction to HTML
+x           1.10.1 Writing secure applications with HTML
+x           1.10.2 Common pitfalls to avoid when using the scripting APIs
+x           1.10.3 How to catch mistakes when writing HTML: validators and conformance checkers
+x       1.11 Conformance requirements for authors
+x           1.11.1 Presentational markup
+x           1.11.2 Syntax errors
+x           1.11.3 Restrictions on content models and on attribute values
+x       1.12 Suggested reading
     2 Common infrastructure
         2.1 Terminology
             2.1.1 Parallelism
