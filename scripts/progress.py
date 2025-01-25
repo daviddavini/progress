@@ -1,3 +1,4 @@
+import argparse
 import re
 import sys
 import glob
@@ -76,15 +77,19 @@ def print_completion(root: Section):
     print(f"Total completion: {progress_str(done,descs)}")
 
 if __name__ == "__main__":
-    if len(sys.argv) == 1:
-        for book in glob.glob('*.progress'):
+    parser = argparse.ArgumentParser('progress')
+    parser.add_argument('filename', nargs='?')
+    parser.add_argument('-o', '--output', choices=['text','html'], default='text')
+    args = parser.parse_args()
+    if not args.filename:
+        for book in glob.glob('library/**/**/**/*.progress'):
             with open(book) as f:
                 lines = f.readlines()
                 root = to_section_tree(f)
             done, descs = root.completion()
             print(f"{progress_str(done,descs)} {root.title}")
     else:
-        with open(sys.argv[1]) as f:
+        with open(args.filename) as f:
             lines = f.readlines()
             root = to_section_tree(f)
         print_completion(root)
