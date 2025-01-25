@@ -18,13 +18,13 @@
   - [x] 1.6 Tools for the Web Designer
 
 - [ ] 2. Quick Start
-  - [ ] 2.1 Writing Tools
-  - [ ] 2.2 A First HTML Document
-  - [ ] 2.3 Embedded Tags
-  - [ ] 2.4 HTML Skeleton
-  - [ ] 2.5 The Flesh on an HTML or XHTML Document
-  - [ ] 2.6 Text
-  - [ ] 2.7 Hyperlinks
+  - [x] 2.1 Writing Tools
+  - [x] 2.2 A First HTML Document
+  - [x] 2.3 Embedded Tags
+  - [x] 2.4 HTML Skeleton
+  - [x] 2.5 The Flesh on an HTML or XHTML Document
+  - [x] 2.6 Text
+  - [x] 2.7 Hyperlinks
   - [ ] 2.8 Images Are Special
   - [ ] 2.9 Lists, Searchable Documents, and Forms
   - [ ] 2.10 Tables
@@ -218,14 +218,42 @@ HTML was based on Standard Generalized Markup Language (SGML), a markup metalang
 
 HTML is *not* a document formatting tool!
 
-reconstitute: To rebuild, or change the organization of.
-eschew: To shun; to avoid as something wrong.
-decry: To blame clamorously; to censure as faulty, mean or worthless.
+reconstitute: To rebuild, or change the organization of.  
+eschew: To shun; to avoid as something wrong.  
+decry: To blame clamorously; to censure as faulty, mean or worthless.  
 
 XML modules allow you to add new features to XHTML documents in a standardized way. For example, the MathML module provides markup elements for math equations. XHTML is itself composed of XML modules.
 
-Word processor: A computer program for inputting, editing, formatting, and displaying text.
-Desktop publishing: The creation of documents such as newsletters, brochures, books and web pages using dedicated software on a personal computer.
+Word processor: A computer program for inputting, editing, formatting, and displaying text.  
+Desktop publishing: The creation of documents such as newsletters, brochures, books and web pages using dedicated software on a personal computer.  
 
-Freeware: Software (usually proprietary) distributed at no monetary cost to the user. This doesn't describe the type of license the software uses.
+Freeware: Software (usually proprietary) distributed at no monetary cost to the user. This doesn't describe the type of license the software uses.  
 Shareware: Proprietary software that is initially shared by the owner for trial use at no cost, often with incomplete functionality until the user pays.
+
+Some HTML tags don't have an end tag, and some end tags are optional.
+
+The <html> tag is required by the HTML and XHTML standards, but optional in practice.
+
+The <frameset> tag (now deprecated) creates a multi-pane layout, where each frame displays a separate HTML document.
+
+The <head> tag defines the documents header.  
+Several header tags define how the document fits into a document collection and into the larger scheme of the Web.
+
+An HTML comment has special-case start and end tags, which are <!-- and -->.  
+
+Instead of physical text style tags, use content-related text style tags which attach meaning to the text passage.
+
+A character entity starts with an ampersand, followed by its name, and terminated with a semicolon. Instead of the name, you can use a pound sign followed by its position number in the Unicode character table. The browser displays the character *if* it exists in the user's font.
+
+Except in special circumstances, browsers ignore leading and trailing spaces, newlines, and sometimes also multiple consecutive spaces.
+
+The <div>, <p>, and <br> tags are the most rudimentary ways to structure your document. All three break the text flow, which restarts on a new line.  
+The <div> and <p> tags define elemental regions of the document and text, respectively.
+
+Uniform Resource Locator (URL): The unique address assigned to a document or resource on the internet.  
+The format is protocol://server_domain_name/pathname, where **protocol** is the software that the browser and server use to communicate and **pathname** is the document's name preceded by the hierarchy of directory names where the file is stored.  
+For relative URLs, the browser fills in any missing portions of the URL with respective parts of the current document's base URL (everything up to the document name). For example, the URL price_list.html is assumed to be located in the same directory as the current document.
+
+Image files are the only multimedia that standard HTML and XHTML have an explicit provision for displaying inline within a document. That's because the industry has reached a consensus on image file formats, namely GIF, PNG, and JPEG. Browsers have built in decoders for those image types.
+
+The browser places an image into the text flow as if it were a special character. By default it aligns the bottom of the image with the bottom of the line of text, but this can be changed with the CSS align property to the top, middle or bottom.
