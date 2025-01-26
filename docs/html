@@ -34,8 +34,8 @@ HTML: MDN Web Docs, last modified on Dec 19, 2024
     References
         HTML elements
             <a>
-            <abbr>
-            <acronym> Deprecated
+x           <abbr>
+x           <acronym> Deprecated
             <address>
             <area>
             <article>

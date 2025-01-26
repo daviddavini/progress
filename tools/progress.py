@@ -1,4 +1,5 @@
 import argparse
+import os
 import re
 import sys
 import glob
@@ -82,12 +83,17 @@ if __name__ == "__main__":
     parser.add_argument('-o', '--output', choices=['text','html'], default='text')
     args = parser.parse_args()
     if not args.filename:
-        for book in glob.glob('library/**/**/**/*.progress'):
-            with open(book) as f:
-                lines = f.readlines()
-                root = to_section_tree(f)
-            done, descs = root.completion()
-            print(f"{progress_str(done,descs)} {root.title}")
+        for category in os.listdir('library'):
+            for tech in os.listdir(os.path.join('library',category)):
+                print(tech.upper())
+                for level in ['spec','docs','guides']:
+                    print(f'    {level}')
+                    for book in glob.glob(os.path.join('library',category,tech,level,'*.progress')):
+                        with open(book) as f:
+                            lines = f.readlines()
+                            root = to_section_tree(f)
+                        done, descs = root.completion()
+                        print(f"        {progress_str(done,descs)} {root.title}")
     else:
         with open(args.filename) as f:
             lines = f.readlines()
