@@ -21,7 +21,7 @@ HTML: MDN Web Docs, last modified on Dec 19, 2024
             Forms and buttons in HTML
             Debugging HTML
     Guides
-        Content categories
+x       Content categories
         Block-level elements
         Inline elements
         Quirks Mode and Standards Mode
@@ -43,8 +43,8 @@ x           <acronym> Deprecated
             <audio>
             <b>
             <base>
-            <bdi>
-            <bdo>
+x           <bdi>
+x           <bdo>
             <big> Deprecated
             <blockquote>
             <body>
@@ -77,8 +77,8 @@ x           <acronym> Deprecated
             <font> Deprecated
             <footer>
             <form>
-            <frame> Deprecated
-            <frameset> Deprecated
+x           <frame> Deprecated
+x           <frameset> Deprecated
             <h1>
             <head>
             <header>
@@ -136,7 +136,7 @@ x           <acronym> Deprecated
             <source>
             <span>
             <strike> Deprecated
-            <strong>
+x           <strong>
             <style>
             <sub>
             <summary>
