@@ -79,21 +79,20 @@ def print_completion(root: Section):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser('progress')
-    parser.add_argument('filename', nargs='?')
-    parser.add_argument('-o', '--output', choices=['text','html'], default='text')
+    parser.add_argument('filename', nargs='?', default=os.path.join(os.path.expanduser('~'),'reading'))
     args = parser.parse_args()
-    if not args.filename:
-        for category in os.listdir('library'):
-            for tech in os.listdir(os.path.join('library',category)):
-                print(tech.upper())
-                for level in ['spec','docs','guides']:
-                    print(f'    {level}')
-                    for book in glob.glob(os.path.join('library',category,tech,level,'*.progress')):
-                        with open(book) as f:
-                            lines = f.readlines()
-                            root = to_section_tree(f)
-                        done, descs = root.completion()
-                        print(f"        {progress_str(done,descs)} {root.title}")
+    if os.path.isdir(args.filename):
+        walk = sorted(os.walk(args.filename), key=lambda x:x[0].split('/')[-1])
+        for top, dirs, files in walk:
+            if top == args.filename:
+                continue
+            print(top.split('/')[-1]+':')
+            for file in files:
+                with open(os.path.join(top, file)) as f:
+                    lines = f.readlines()
+                    root = to_section_tree(f)
+                done, descs = root.completion()
+                print(f"{progress_str(done,descs)} {root.title}")
     else:
         with open(args.filename) as f:
             lines = f.readlines()
