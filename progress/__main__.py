@@ -82,11 +82,14 @@ def main():
     parser.add_argument('filename', nargs='?', default=os.path.join(os.path.expanduser('~'),'reading'))
     args = parser.parse_args()
     if os.path.isdir(args.filename):
-        walk = sorted(os.walk(args.filename), key=lambda x:x[0].split('/')[-1])
+        walk = sorted(os.walk(args.filename, topdown=True), key=lambda x:x[0].split('/')[-1])
         for top, dirs, files in walk:
+            if any(x and x[0]=='.' for x in top.strip().split('/')):
+                continue
+            name = top.split('/')[-1]
             if top == args.filename:
                 continue
-            print(top.split('/')[-1]+':')
+            print(name+':')
             for file in files:
                 with open(os.path.join(top, file)) as f:
                     root = to_section_tree(f)
