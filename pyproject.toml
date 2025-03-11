@@ -1,0 +1,11 @@
+[project]
+name = "prog"
+description = "simple progress tracking tool for deep reading"
+version = "0.1.0"
+authors = [
+    { name = "David Davini", email = "hello@daviddavini.com" }
+]
+
+[project.scripts]
+prog = "progress.__main__:main"
+

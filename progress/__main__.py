@@ -30,7 +30,7 @@ class Section:
 
 def to_section_tree(f):
     prev = None
-    for line in lines:
+    for line in f.readlines():
         if line.isspace():
             continue
         m = re.match(r"(x* *)(.*)", line)
@@ -77,7 +77,7 @@ def print_completion(root: Section):
     done, descs = root.completion()
     print(f"Total completion: {progress_str(done,descs)}")
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser('progress')
     parser.add_argument('filename', nargs='?', default=os.path.join(os.path.expanduser('~'),'reading'))
     args = parser.parse_args()
@@ -89,12 +89,13 @@ if __name__ == "__main__":
             print(top.split('/')[-1]+':')
             for file in files:
                 with open(os.path.join(top, file)) as f:
-                    lines = f.readlines()
                     root = to_section_tree(f)
                 done, descs = root.completion()
                 print(f"{progress_str(done,descs)} {root.title}")
     else:
         with open(args.filename) as f:
-            lines = f.readlines()
             root = to_section_tree(f)
         print_completion(root)
+
+if __name__ == "__main__":
+    main()
